@@ -21,6 +21,11 @@ public class Article {
     @Column(name = "content",updatable = false)
     private String content;
 
+
+    public void update(String title, String content){
+        this.title = title;
+        this.content = content;
+    }
     @Builder
     public Article(String title, String content){
         this.title = title;
